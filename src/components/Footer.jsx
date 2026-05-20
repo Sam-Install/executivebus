@@ -45,7 +45,7 @@ const Footer = () => {
               { label: 'Login', to: '/signin' },
               { label: 'Track Parcel', to: '/track' },
               { label: 'View Seats', to: '/buses/seats' },
-              { label: 'My Bookings', to: '/bookings' },
+              { label: 'My Bookings', to: '/signin' },
             ].map((link, i) => (
               <li key={i}>
                 <a href={link.to}

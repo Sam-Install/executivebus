@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { MdEmail, MdLock, MdFlight } from 'react-icons/md'
+import { MdEmail, MdLock, MdDirectionsBus } from 'react-icons/md'
 import { FaEye, FaEyeSlash } from 'react-icons/fa'
 import { toast } from 'sonner'
 
@@ -21,19 +21,20 @@ const SignIn = () => {
   const inputClass = 'w-full pl-11 pr-4 py-3 text-sm border border-[#e5e5e5] rounded-lg outline-none transition-all duration-200 placeholder:text-gray-300 bg-white'
 
   return (
-    <section className='min-h-screen bg-[#f7f8fa] flex items-center justify-center px-4'>
+    <section className='pt-25 px-4 sm:px-8 md:px-12 lg:px-16 bg-[#f7f8fa] flex items-center justify-center py-12'>
       <div className='w-full max-w-md'>
-
-        {/* Logo */}
-        <div className='flex items-center justify-center gap-2 mb-8'>
-          <MdFlight size={28} className='rotate-45' style={{ color: '#f5a623' }} />
-          <span className='text-2xl font-bold text-[#111] tracking-tight'>
-            Executive<span style={{ color: '#f5a623' }}>Bus</span>
-          </span>
-        </div>
 
         {/* Card */}
         <div className='bg-white rounded-2xl shadow-sm border border-[#eaeaea] p-8'>
+
+          {/* Logo inside card — matches CreateAccount */}
+          <div className='flex items-center gap-2 mb-6'>
+            <MdDirectionsBus size={26} style={{ color: '#f5a623' }} />
+            <span className='text-xl font-bold text-[#111] tracking-tight'>
+              Executive<span style={{ color: '#f5a623' }}>Bus</span>
+            </span>
+          </div>
+
           <h2 className='text-xl font-bold text-[#111] mb-1'>Welcome back</h2>
           <p className='text-sm text-[#888] mb-6'>Sign in to your account to continue</p>
 
